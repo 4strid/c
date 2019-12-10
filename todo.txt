@@ -1,0 +1,49 @@
+:split
+:vert split
+
+:autocmd bufenter * edit %
+
+Vim Builtins
+------------
+note that you gotta let go of the ctrl key!
+<c-w>h hop left
+<c-w>j hop down
+<c-w>k hop up
+<c-w>l hop right
+<c-w><c-w> hop next
+
+<c-w>H pull all the way left
+<c-w>J pull all the way down
+<c-w>K pull all the way up
+<c-w>L pull all the way right
+
+Astwid's Special Bindings
+-------------------------
+<c-w><c-h> split left
+<c-w><c-j> split down
+<c-w><c-k> split up
+<c-w><c-l> split down
+
+<c-w>t split terminal
+<c-w><c-t> open terminal in current window
+
+main () {
+  repeat:
+     play the game and check if the player won
+    if the player won: display win message
+    otherwise diplay lose message
+  now play the game again until they decide to quit
+}
+
+play_the_game () {
+  generate a random number
+  allow for X number of guesses
+  prompt the player for a guess
+  check if winning number
+    if they win, return "win!"
+  otherwise if too high:
+    print too high
+  otherwise if too low:
+    print too low
+  next prompt the player for a guess... etc
+}
